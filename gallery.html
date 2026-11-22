@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Explore Lesotho</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Explore Lesotho</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="container py-4">
+  <h1 class="text-center">Explore Our Gallery</h1>
+  <p class="text-center">Take a look at the beautiful landscapes and attractions of Lesotho.</p>
+
+  <div class="row">
+    <div class="col-md-4"><div class="card">
+      <img src="mountain.JFIF" class="card-img-top" alt="Mountain peaks">
+      <div class="card-body"><h2>Mountain Landscapes</h2>
+      <button class="btn btn-primary view-image" data-image="mountain.JFIF" data-title="Mountain Landscapes" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+
+    <div class="col-md-4"><div class="card">
+      <img src="view.JFIF" class="card-img-top" alt="Natural scenery">
+      <div class="card-body"><h2>Natural Beauty</h2>
+      <button class="btn btn-primary view-image" data-image="view.JFIF" data-title="Natural Beauty" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+
+    <div class="col-md-4"><div class="card">
+      <img src="snow.JPEG" class="card-img-top" alt="Snowy mountain">
+      <div class="card-body"><h2>Winter Mountains</h2>
+      <button class="btn btn-primary view-image" data-image="snow.JPEG" data-title="Winter Mountains" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+
+    <div class="col-md-4"><div class="card">
+      <img src="lake.JFIF" class="card-img-top" alt="Mountain lake">
+      <div class="card-body"><h2>Beautiful Lakes</h2>
+      <button class="btn btn-primary view-image" data-image="lake.JFIF" data-title="Beautiful Lakes" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+
+    <div class="col-md-4"><div class="card">
+      <img src="vally.JFIF" class="card-img-top" alt="Mountain valley">
+      <div class="card-body"><h2>Mountain Valleys</h2>
+      <button class="btn btn-primary view-image" data-image="vally.JFIF" data-title="Mountain Valleys" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+
+    <div class="col-md-4"><div class="card">
+      <img src="water.JFIF" class="card-img-top" alt="Water and natural scenery">
+      <div class="card-body"><h2>Water and Nature</h2>
+      <button class="btn btn-primary view-image" data-image="water.JFIF" data-title="Water and Nature" data-bs-toggle="modal" data-bs-target="#imageModal">View Image</button></div>
+    </div></div>
+  </div>
+
+  <div class="text-center mt-4">
+    <h2>Discover More of Lesotho</h2>
+    <p>Visit our destinations page to learn more about places you can explore.</p>
+    <a href="destinations.html" class="btn btn-primary">View Destinations</a>
+  </div>
+</main>
+
+<div class="modal fade" id="imageModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="imageModalLabel">Gallery Image</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src=""  alt="Selected gallery image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center p-3" style="background:dackgrey; color:white;">
+  <p>&copy; 2026 Explore Lesotho. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
